@@ -1,0 +1,23 @@
+@charset "utf-8";
+@import url();
+
+/* common CSS */
+*{box-sizing: border-box; font-family: serif;}
+html, body{margin: 0; padding: 0;}
+header, section, article, aside, main, nav, footer{display: block;}
+header:after, section:after,article:after,  aside:after, main:after, nav:after, footer:after{content: ""; display: block;clear: both;}
+h1,h2,h3,h4,h5,h6,p{margin: 0;}
+ul, ol{margin: 0;padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+#img_nav{background-color: #d3dce5;}
+#img_nav .wrap{width: 1200px; margin: 0 auto; padding: 20px 0;}
+#img_nav .wrap ul{font-size: 0;}
+#img_nav .wrap ul li{display: inline-block;
+vertical-align: top; width: calc(100% / 12); padding: 0 10px; height: 80px;}
+#img_nav .wrap ul li a{display: block; width: 100%; height: 100%; background-size: cover;background-position: 50% 50%; transition: background-images 1s;}
+
+#img_nav .wrap ul li a img{width: 100%; transition: all 1s;}
+
+#img_nav .wrap ul li:nth-child(2) a{background-image: url(../img/quick_02_off.png);}
+#img_nav .wrap ul li:nth-child(2):hover a{background-image: url(../img/quick_02_on.png);}
